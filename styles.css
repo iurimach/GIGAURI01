@@ -1,0 +1,94 @@
+/* ძირითადი სტილი */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.main_big_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* პატარა ბლოკი */
+.small_div_wrapper {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  flex-wrap: wrap;
+}
+
+/* სურათის დივი */
+.main_big_img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 10px;
+}
+
+.main_big_img img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ტექსტისა და ღილაკის დივი */
+.text_div_wrapper {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding: 10px;
+  position: relative;
+}
+
+.product_title {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.product_price {
+  color: green;
+  font-weight: bold;
+}
+
+.product_description {
+  margin: 10px 0;
+}
+
+/* ღილაკი */
+.see_more_btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see_more_btn:hover {
+  background-color: #0056b3;
+}
+
+/* დამატებითი სურათების ბლოკი */
+.extra_images {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.extra_images img {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: cover;
+}
