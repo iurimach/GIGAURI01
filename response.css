@@ -1,0 +1,31 @@
+
+/* მობილური ადაპტაცია ---------------------------------------------*/
+  @media (max-width: 700px) {
+    .small_div_wrapper {
+      flex-direction: column;
+    }
+    .main_big_img, .text_div_wrapper {
+      width: 100%;
+      margin-right: 0;
+    }
+    .main_big_img img {
+      max-height: 200px;
+    }
+    .small_thumbnails {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .buttons_wrapper{
+        flex-direction: column;
+    }
+    .facebookBtn, .instagramBtn, .whatsappBtn{
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    
+        margin: 0 auto;
+    }
+  }
