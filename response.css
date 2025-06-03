@@ -34,8 +34,3 @@
     
   }
 
-@media (max-width: 350px) {
-.icon_wrapper{
-  flex-wrap: wrap;
-}
-}

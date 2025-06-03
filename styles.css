@@ -188,6 +188,9 @@ a{
     height: 40px;
 }
 
+.icon_div_tittle_wrapper{
+  margin-left: 5px;
+}
 .icon_div_title{
 font-weight: 700;
     font-size: 16px;
