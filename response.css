@@ -18,7 +18,7 @@
 
   @media (max-width: 500px) {
     .buttons_wrapper{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .facebookBtn, .instagramBtn, .whatsappBtn{
         width: 150px;

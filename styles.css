@@ -99,42 +99,8 @@
     display: none; /* defaul hidden */
     gap: 10px;
   }
-  .buttons_wrapper button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  .facebookBtn {
-    background-color: #1877f2;
-  }
-  .facebookBtn:hover {
-    background-color: #145dbf;
-  }
-  .facebookBtn img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-  }
-  .instagramBtn {
-    background: rgb(212, 74, 74);
-  }
-  .instagramBtn:hover {
-    filter: brightness(0.9);
-  }
-  .instagramBtn img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    filter: invert(1);
-  }
+  
+  
   .seeMoreBtn {
     align-self: flex-end;
     background-color: #007bff;
@@ -188,38 +154,38 @@
   }
 
   
-  
-  .whatsappBtn {
-  background-color: #25D366;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.3s ease;
-}
-.whatsappBtn:hover {
-  background-color: #1ebe5b;
-}
-.whatsappBtn img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  filter: none;
-}
+
+
 
 a{
     text-decoration: none;
     color: white;
 }
 
+.klook_img{
+  width: 55px;
+  height: 55px;
+}
 
+.getyourgude_img{
+width: 55px;
+  height: 55px;
+}
 
+.whatsapp-icon {
+    position: fixed; /* ფიქსირებული პოზიცია */
+    bottom: 20px; /* 20px მანძილი ქვემოთ */
+    right: 20px; /* 20px მანძილი მარჯვენა მხრიდან */
+    z-index: 23; /* ინდექსი 23, რომ სხვა ელემენტების ზემოთ დარჩეს */
+    width: 50px; /* აიკონის სიგრძე (შეცვალე როგორც საჭიროა) */
+    height: 50px; /* აიკონის სიმაღლე (შეიცვალე როგორც საჭიროა) */
+  }
+  
+  .whatsapp-icon img {
+    width: 100%; /* აიკონის სურათი ადაპტირებულია კონტეინერის ზომებთან */
+    height: auto;
+    cursor: pointer;
+  }
 
 .footer_img1{
   width: 100%;
