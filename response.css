@@ -31,7 +31,11 @@
     .whatsapp-icon {
       width: 40px;
     }
-    .icon_wrapper{
-      flex-wrap: wrap;
-    }
+    
   }
+
+@media (max-width: 350px) {
+.icon_wrapper{
+  flex-wrap: wrap;
+}
+}
