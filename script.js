@@ -4,9 +4,10 @@ const smallDivWrapper = document.querySelector('.small_div_wrapper');
   const buttonsWrapper = document.querySelector('.buttons_wrapper');
 
 
+
+
   // small thumbnails images
   const thumbnails = document.querySelectorAll('.small_thumbnails img');
-
 document.addEventListener('DOMContentLoaded', () => {
   const seeMoreButtons = document.querySelectorAll('.seeMoreBtn');
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const fullDescription = wrapper.querySelector('.full_description');
       const buttonsWrapper = wrapper.querySelector('.buttons_wrapper');
       const smallThumbnails = wrapper.querySelector('.small_thumbnails');
+      const iconWrapper = wrapper.querySelector('.icon_wrapper'); // შეცვლილია!
 
       const isExpanded = wrapper.classList.toggle('expanded');
 
@@ -23,18 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
         fullDescription.style.display = 'block';
         buttonsWrapper.style.display = 'flex';
         smallThumbnails.style.display = 'flex';
+        iconWrapper.style.display = 'flex'; // კონკრეტული დივის icon_wrapper
         seeMoreBtn.textContent = 'See Less';
       } else {
         fullDescription.style.display = 'none';
         buttonsWrapper.style.display = 'none';
         smallThumbnails.style.display = 'none';
+        iconWrapper.style.display = 'none';
         seeMoreBtn.textContent = 'See More';
       }
     });
   });
-
-  // პატარა სურათების ლოგიკა
-  const allThumbnails = document.querySelectorAll('.small_thumbnails img');
+   const allThumbnails = document.querySelectorAll('.small_thumbnails img');
 
   allThumbnails.forEach((thumb) => {
     thumb.addEventListener('click', (e) => {
@@ -44,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
 
   const whatsappBtn = document.querySelector('.whatsappBtn');
 whatsappBtn.addEventListener('click', () => {
