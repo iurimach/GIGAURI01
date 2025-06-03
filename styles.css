@@ -174,7 +174,11 @@ a{
   display: none;
   margin-top: 15px;
  
-  
+}
+
+.icon_wrapper_one_wrapper{
+  display: flex;
+  margin-left: 10px;
 }
 .icon_div{
     display: flex;
@@ -189,7 +193,7 @@ a{
 }
 
 .icon_div_tittle_wrapper{
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .icon_div_title{
 font-weight: 700;
