@@ -47,12 +47,49 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-  const whatsappBtn = document.querySelector('.whatsappBtn');
-whatsappBtn.addEventListener('click', () => {
+
+
+//ეს აკეთებს ჩატის გახსნას და სხვა ჩატების ღილაკების სტილებს აქ ვიწყებ */
+   const toggleBtn = document.getElementById('toggleBtn');
+  const menuWrapper = document.getElementById('menu');
+  const menuItems = menuWrapper.querySelectorAll('.menu-item');
+  
+
+    
+  let isOpen = false;
+
+  toggleBtn.addEventListener('click', () => {
+        console.log("Shmovdi2")
+    isOpen = !isOpen;
+    menuWrapper.classList.toggle('active');
+
+
+    const radius = 100; // მანძილი ღილაკიდან
+    const angleStep = Math.PI / (menuItems.length - 1); // განაწილება მარცხენიდან მარჯვნივ ზემოდან
+    const whatsappIcon = document.querySelector('.whatsapp-icon');
+
+    menuItems.forEach((item, index) => {
+      const angle = angleStep * index; // 0-დან π-მდე
+      const x = radius * Math.cos(angle); // X მიდის მარცხნიდან მარჯვნივ
+      const y = -radius * Math.sin(angle); // Y ზემოთ მივდივართ
+
+      if (isOpen) {
+        item.style.transform = `translate(${x}px, ${y}px)`;
+        whatsappIcon.classList.add('margin');
+      } else {
+        item.style.transform = `translate(0, 0)`;
+        whatsappIcon.classList.remove('margin');
+      }
+    });
+
+    toggleBtn.innerHTML = isOpen ? '<P class="xbt099">X</>' : '<img src="chat.png" alt="" class="icon_logo">';
+  });
+//ეს აკეთებს ჩატის გახსნას და სხვა ჩატების ღილაკების სტილებს აქ ვამთავრებ */
+function openWhatsApp() {
   const phoneNumber = '+995568800554';
   const url = `https://wa.me/${phoneNumber.replace(/\D/g,'')}`; // ფორმატირებული ნომერი მხოლოდ ციფრებით
   window.open(url, '_blank');
-});
+}
 
   // Change main image on thumbnail click
   thumbnails.forEach(thumb => {
